@@ -8,39 +8,187 @@
 body{
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-  margin-top: 15px;
-  margin-left: 25px;
 }
 
+img{
+  vertical-align: bottom;
+  margin-top: 10px;
+  margin-left: 10px;
+} 
+
 /*TITOLO TOOBOLIST*/
+div.titolo{
+background-color: white;
+vertical-align: middle;
+display: inline-block;
+
+}
+
 .title{
   font-weight: bold;
+  font-size: 40px;
 }
 
 /* MAIN */
 main{
-  margin: 50px;
-  margin-left: 240px;
-  width: 50%;
+  margin: 0 auto;
+  width: 55%;
 }
 
-.task-1{
-  font-size: 13px;
-  background-color: rgb(101, 181, 255);
-  padding: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 6px;
+section{
+  background-color: white;
+  height: 75px;
+  margin-top: 70px;
+  padding-left: 80px;
+  border-top-right-radius: 10px;
+  padding: 18px;
+  text-align: left;
+  border-top-left-radius: 10px;
 }
 
-.task-2{
-  font-size: 13px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.3;
-  padding: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 6px;
-  border: 1px solid grey;
+section .task-1{
+  width: 105px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  background-color: #21a9f8;
+  height: 37px;
+
+}
+
+section .task-2{
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  color: lightgrey;
+  border-color: lightgrey;
+  border: 2px solid lightgrey;
+  display: inline-block;
+  background-color: white;
+  height: 40px;
+  width: 120px;
+}
+
+/* DESCRIZIONE */
+.tutto{
+  padding: 18px;
+  text-align: left;
+  margin-bottom: 20px;
+  background-color: white;
+  height: 750px;
+  margin-top: 3px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: left;
+  
+}
+
+h2{
+  padding-top: 10px;
+}
+
+.elenco{
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.conferma{
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  color: rgb(87, 224, 86);
+  border: 2px solid rgb(86, 224, 86);
+  background-color: white;
+  width: 25px;
+}
+
+.edit{
+  font-size: 10px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  display: inline-block;
+  background-color: #21a9f8;
+  height: 28px;
+  width: 65px;
+  line-height: 28px;
+}
+
+.q1goals{
+  font-size: 10px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  display: inline-block;
+  background-color: #8a00ca;
+  height: 28px;
+  width: 65px;
+  line-height: 28px;
+}
+
+.recruiting{
+  font-size: 10px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  display: inline-block;
+  background-color: #10d89c;
+  height: 28px;
+  width: 65px;
+  line-height: 28px;
+}
+
+.mobile{
+  font-size: 10px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  display: inline-block;
+  background-color: #f77103;
+  height: 28px;
+  width: 65px;
+  line-height: 28px;
+}
+
+.website{
+  font-size: 10px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  display: inline-block;
+  background-color: #d485e4;
+  height: 28px;
+  width: 65px;
+  line-height: 28px;
+}
+
+.sales{
+  font-size: 10px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  display: inline-block;
+  background-color: #6cb666;
+  height: 28px;
+  width: 65px;
+  line-height: 28px;
+}
+
+
+
+
+.croce{
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  color: rgb(255, 20, 3);
+  border: 2px solid rgb(255, 0, 0);
+  background-color: white;
+  width: 25px;
 }

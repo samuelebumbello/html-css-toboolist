@@ -4,192 +4,123 @@
   box-sizing: border-box;
 }
 
-/* HEADER */
 body{
-  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #F6F8F9;
 }
 
-img{
-  vertical-align: bottom;
-  margin-top: 10px;
-  margin-left: 10px;
-} 
-
-/*TITOLO TOOBOLIST*/
-div.titolo{
-background-color: white;
-vertical-align: middle;
-display: inline-block;
-
-}
-
-.title{
-  font-weight: bold;
-  font-size: 40px;
-}
-
-/* MAIN */
-main{
-  margin: 0 auto;
-  width: 55%;
-}
-
-section{
+.container{
+  width: 70%;
+  margin: 40px auto;
   background-color: white;
-  height: 75px;
-  margin-top: 70px;
-  padding-left: 80px;
-  border-top-right-radius: 10px;
-  padding: 18px;
-  text-align: left;
-  border-top-left-radius: 10px;
+  border-radius: 5px;
 }
 
-section .task-1{
-  width: 105px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 10px;
-  color: white;
-  display: inline-block;
-  background-color: #21a9f8;
-  height: 37px;
+/* button */
+.btn{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-section .task-2{
-  line-height: 40px;
+.btn.btn-filled{
+  background-color: #47ADF1;
+  color: white;
+  border: 1px solid #47ADF1;
+}
+
+.btn.btn-empty{
+  background-color: white;
+  color: lightgray;
+  border: 1px solid lightgray;
+}
+
+header{
+  background-color: white;
+  height: 70px;
+  padding: 10px 20px;
+}
+
+header img{
+  height: 100%;
+  vertical-align: middle;
+}
+
+header .logo-text{
+  font-size: 38px;
+  font-weight: 900;
+  vertical-align: middle;
+}
+
+.container .top{
+  padding: 20px 50px;
+  border-bottom: 1px solid #F6F8F9;
+}
+
+.container .tasks{
+  padding: 20px 50px;
+}
+
+.tasks ul{
+  list-style: none;
+}
+
+.tasks ul li h3, .tasks ul li{
+  margin-bottom: 30px;
+}
+
+.tasks ul li h3::before{
+  content: '\25BE';
+  padding-right: 5px;
+}
+
+li .circle::before{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
   text-align: center;
+  line-height: 15px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+li .circle.checked::before{
+  content: '\2713';
+  color: green;
+  border: 1px solid green;
+}
+
+li .circle.unchecked::before{
+  content: '\2715';
+  color: red;
+  border: 1px solid red;
+}
+
+.tag{
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
   border-radius: 10px;
-  color: lightgrey;
-  border-color: lightgrey;
-  border: 2px solid lightgrey;
-  display: inline-block;
-  background-color: white;
-  height: 40px;
-  width: 120px;
-  cursor: pointer;
 }
 
-/* DESCRIZIONE */
-.tutto{
-  padding: 18px;
-  text-align: left;
-  margin-bottom: 20px;
-  background-color: white;
-  height: 750px;
-  margin-top: 3px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  text-align: left;
-  
+.tag.editorial{
+  background-color: #45AAE9;
 }
 
-h2{
-  padding-top: 25px;
+.tag.recruting{
+  background-color: #64C0A9;
 }
 
-.elenco{
-  padding-bottom: 10px;
-  padding-top: 15px;
+.tag.mobile{
+  background-color: #F29E32;
 }
 
-.conferma{
-  height: 25px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  vertical-align: middle;
-  color: rgb(87, 224, 86);
-  border: 2px solid rgb(86, 224, 86);
-  background-color: white;
-  width: 25px;
+.tag.sales{
+  background-color: #B0C926;
 }
 
-.edit{
-  font-size: 10px;
-  text-align: center;
-  border-radius: 30px;
-  color: white;
-  display: inline-block;
-  background-color: #21a9f8;
-  height: 28px;
-  width: 65px;
-  line-height: 28px;
-}
-
-.q1goals{
-  font-size: 10px;
-  text-align: center;
-  border-radius: 30px;
-  color: white;
-  display: inline-block;
-  background-color: #8a00ca;
-  height: 28px;
-  width: 65px;
-  line-height: 28px;
-}
-
-.recruiting{
-  font-size: 10px;
-  text-align: center;
-  border-radius: 30px;
-  color: white;
-  display: inline-block;
-  background-color: #10d89c;
-  height: 28px;
-  width: 65px;
-  line-height: 28px;
-}
-
-.mobile{
-  font-size: 10px;
-  text-align: center;
-  border-radius: 30px;
-  color: white;
-  display: inline-block;
-  background-color: #f77103;
-  height: 28px;
-  width: 65px;
-  line-height: 28px;
-}
-
-.website{
-  font-size: 10px;
-  text-align: center;
-  border-radius: 30px;
-  color: white;
-  display: inline-block;
-  background-color: #d485e4;
-  height: 28px;
-  width: 65px;
-  line-height: 28px;
-}
-
-.sales{
-  font-size: 10px;
-  text-align: center;
-  border-radius: 30px;
-  color: white;
-  display: inline-block;
-  background-color: #6cb666;
-  height: 28px;
-  width: 65px;
-  line-height: 28px;
-}
-
-
-
-
-.croce{
-  height: 25px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  vertical-align: middle;
-  color: rgb(255, 20, 3);
-  border: 2px solid rgb(255, 0, 0);
-  background-color: white;
-  width: 25px;
+.tag.q1{
+  background-color: #9C73E4;
 }

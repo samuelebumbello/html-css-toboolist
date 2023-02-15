@@ -4,88 +4,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Toboolist</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Toboolist 94</title>
 </head>
 <body>
 
-<!-- HEADER -->
   <header>
-    <div class="titolo">
-        <img src="img/Logo.png" alt="Logo Boolean">
-        <span class="title">Toboolist</span>
-    </div>
+    <img src="img/Logo.png" alt="Logo">
+    <span class="logo-text">Toboolist</span>
   </header>
 
-<!-- MAIN -->
-<main>
+  <main>
 
-<!-- 2 CELLE -->
-  <section>
-    <span class="task-1">Add Task</span>
-    <span class="task-2">Add Section</span>
-  </section>
+    <div class="container">
 
-<!-- DESCRIZIONE -->
-  <div class="tutto">
+      <div class="top">
+          <button class="btn btn-filled">Add Task</button>
+          <button class="btn btn-empty">Add Section</button>
+      </div>
 
-    <!-- PRIMO BLOCCO -->
-    <h2> &#9660 New Task</h2>
-      
-    <div class="elenco">
-      <span class="conferma">&#10003</span> Quarterly Newsletter <span class="edit">Editorial</span>
+      <div class="tasks">
+
+        <ul>
+          <li>
+            <h3>New Task</h3>
+            <ul>
+              <li>
+                <span class="circle checked"></span>
+                <span>Quartely Newsletter</span>
+                <span class="tag editorial">Editorial</span>
+              </li>
+              <li>
+                <span class="circle unchecked"></span>
+                  <span>qualsiasi cosa</span>
+                <span class="tag recruting">Recruting</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Today</h3>
+            <ul>
+              <li>
+                <span class="circle checked"></span>
+                <span>Quartely Newsletter</span>
+                <span class="tag editorial">Editorial</span>
+              </li>
+              <li>
+                <span class="circle unchecked"></span>
+                  <span>qualsiasi cosa</span>
+                <span class="tag mobile">Recruting</span>
+              </li>
+              <li>
+                <span class="circle unchecked"></span>
+                  <span>qualsiasi cosa</span>
+                <span class="tag sales">Recruting</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Upcoming</h3>
+            <ul>
+              <li>
+                <span class="circle checked"></span>
+                <span>Quartely Newsletter</span>
+                <span class="tag editorial">Editorial</span>
+              </li>
+              <li>
+                <span class="circle unchecked"></span>
+                  <span>qualsiasi cosa</span>
+                <span class="tag q1">Recruting</span>
+              </li>
+              <li>
+                <span class="circle unchecked"></span>
+                  <span>qualsiasi cosa</span>
+                <span class="tag recruting">Recruting</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
     </div>
 
-<!-- SECONDO BLOCCO -->
-    <h2>&#9660 Today</h2>
-
-    <div class="elenco">
-      <span class="conferma">&#10003</span> Recruiting blog post <span class="edit">Editorial</span>
-    </div>
-
-    
-    <div class="elenco">
-      <span class="conferma">&#10003</span> Mobile app luaunch <span class="q1goals">Q1 Goals</span>
-    </div>
-
-    
-    <div class="elenco">
-      <span class="croce">&#10007</span> Interview John H. <span class="recruiting">Recruiting</span>
-    </div>
-
-    <div class="elenco">
-      <span class="conferma">&#10003</span> Summit update to mobiile storefronts <span class="mobile">Mobile</span>
-    </div>
-
-
-<!-- TERZO BLOCCO -->
-    <h2>&#9660 Upcoming</h2>
-
-    <div class="elenco">
-      <span class="croce">&#10007</span> Schedule meeting with Alex 
-    </div>
-
-    <div class="elenco">
-      <span class="conferma">&#10003</span> Homepage refresh <span class="website">Website</span>
-    </div>
-
-    <div class="elenco">
-      <span class="conferma">&#10003</span> Onboard new Sales team members <span class="sales">Sales</span>
-    </div>
-
-    <div class="elenco">
-      <span class="conferma">&#10003</span> Review editorial calendar <span class="edit">Editorial</span>
-    </div>
-
-   </div>
   </main>
-
-
-
-
-
-
-
-
+  
 </body>
 </html>
